@@ -1,3 +1,23 @@
+// HOME WORK 
+// Создайте массив объектов с полями "name" и "price". Реализуйте функцию hasExpensiveItem, используя метод some, чтобы проверить, содержит ли массив хотя бы один объект с ценой выше 50.
+const items = [
+  { name: 'Item 1', price: 30 },
+  { name: 'Item 2', price: 50 },
+  { name: 'Item 3', price: 70 },
+  { name: 'Item 4', price: 20 },
+];
+
+
+function hasExpensiveItem(arr) {
+  return arr.some(item => item.price > 50);
+}
+
+const result = hasExpensiveItem(items);
+console.log(result); 
+
+console.log("====================");
+
+
 // Вывести элементы массива
 // Напишите функцию, которая принимает массив чисел и с помощью forEach выводит каждый элемент в консоль.
 
@@ -14,7 +34,7 @@ console.log("====================");
 // Тут база чисто, ничего сложного, просто чтоб отработать синтаксис. Кто не отработает - будут проблемы с пониманием в будущем
 // Сумма элементов массива
 // Напишите функцию, которая принимает массив чисел и с помощью forEach подсчитывает их сумму.
-const array2 = [12, 32, 44, 55, 77, "hello world"];
+const array2 = [19, 32, 44, 55, 77];
 let sum = 0;
 array2.forEach((value) => {
   sum += value;
@@ -86,15 +106,41 @@ const peopls1 = [
   
   console.log(peopls1);
   
+  console.log("====================================================");
 
 // Умножение каждого элемента на 2
 // Напишите функцию, которая принимает массив чисел и с помощью forEach умножает каждый элемент на 2 (модифицирует исходный массив).
 
+
+arrayEl.forEach((value, index, arr) => arr[index] = value * 2);
+console.log(arrayEl);
+
+
+console.log("====================================================");
 // Копирование значений
 // Используя forEach, скопируйте все элементы из одного массива в другой.
+const copdArray = [];
+arrayEl.forEach(value => copdArray.push(value));
+console.log(copdArray);
 
+console.log("====================================================");
 // Поиск максимального числа
 // Напишите функцию, которая принимает массив чисел и с помощью forEach находит максимальное число в массиве.
+const arrayEl1 = [1, 2, 3, 4, 5, 6, 7];
+const suchMax = (numbers) => {
+let max = numbers[0]
+numbers.forEach((num) => {
+  
+  if (num > max) {
+    max = num; 
+  }
+});
+
+return max;
+};
+console.log(suchMax(arrayEl1));
+
+
 
 // Создайте HTML-страницу с кнопкой "Кликни меня" и блоком, в котором будет отображаться количество кликов.
 
@@ -196,6 +242,8 @@ const newArrObj = arrayObj.map((value) => {
 });
 console.log(arrayObj);
 
+console.log("====================================================");
+
 // Создание нового массива с длиной строк
 // Напишите функцию, которая принимает массив строк и возвращает массив, содержащий длину каждой строки.
 const strok = ["hello", "bruder", "как ты?"];
@@ -204,6 +252,8 @@ function strokLenght(arr) {
   return strokLenght;
 }
 console.log(strokLenght(strok));
+
+console.log("====================================================");
 
 // Добавление свойства объектам
 // Используя map, добавьте каждому объекту в массиве объектов новое свойство isActive: true, возвращая новый массив.
@@ -221,19 +271,41 @@ const peopls = [
   console.log(updatedPeoples);
   
 
-
+  console.log("====================================================");
 
 // Создание массива квадратов чисел
 // Напишите функцию, которая принимает массив чисел и возвращает массив квадратов этих чисел.
+function squareArray(numbers) {
+  return numbers.map(number => number * 2);
+}
+const numbers = [1, 2, 3, 4, 5];
+const squares = squareArray(numbers);
+console.log(squares);
 
+console.log("====================================================");
 // Преобразование регистра строк
 // Используя map, преобразуйте массив строк в новый массив, где все строки в верхнем регистре.
-
+ const strok1 = [ 'hello', 'world','morgen']
+ const newStrok = strok1.map(str => str.toUpperCase())
+ console.log(newStrok);
+ console.log("====================================================");
+ 
 // Создание массива первых букв
 // Напишите функцию, которая принимает массив строк и возвращает массив первых букв каждой строки.
-
+const ersteBuch = strok1.map(str => str[0])
+console.log(ersteBuch);
+console.log("====================================================");
 // Добавление префикса к строкам
 // Используя map, создайте новый массив строк, где к каждому элементу массива добавляется префикс "Item: ".
+const newStrok1 = strok1.map(str =>  "Item:" + str)
+console.log(newStrok1);
 
+console.log("====================================================");
 // Преобразование чисел в булевы значения
 // Напишите функцию, которая принимает массив чисел и возвращает новый массив булевых значений (true, если число четное, и false, если нечетное).
+
+const numbers3 = [1, 2, 3, 4, 5];
+const convertToBoolean = (arr) => arr.map(num => num % 2 === 0);
+const booleanArray = convertToBoolean(numbers);
+console.log(booleanArray); 
+console.log("====================================================");
