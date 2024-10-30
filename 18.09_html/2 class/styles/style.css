@@ -1,0 +1,38 @@
+/* *{
+    padding: 0;
+    margin: 0;
+} */
+/* ol{
+    list-style: none;
+}
+
+} */
+/* 
+th{
+    color: brown;
+    border: 1px solid red;
+    margin: 10px 0;
+    padding: 10px;
+    width: fit-content;
+} */
+
+.list__item{
+    border: 1px solid red;
+    margin: 10px 0;
+    padding: 10px;
+    width: fit-content;
+}
+
+td{
+    padding: 10px;
+    color: aqua;
+background-color: red;
+}
+
+.input__password {
+    border: 0.5px solid black;
+    border-radius: 8px;
+    padding: 5px 10px;
+    background: transparent;
+    outline: none;
+}

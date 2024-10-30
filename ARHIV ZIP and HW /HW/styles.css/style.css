@@ -1,0 +1,185 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 390px;
+    max-height: 600px;
+    background: #14181D;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.item {
+    text-align: center;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f4eeeedc;
+    position: relative;
+    margin: 0 auto 10px;
+}
+
+.circle.live::before {
+    content: "Live";
+    position: absolute;
+    bottom: -8px;
+    left: 12%;
+    background-color: #3F48CC;
+    color: white;
+    border-radius: 12px;
+    padding: 2px 8px;
+    font-size: 12px;
+    opacity: 0.72;
+}
+
+.item p {
+    font-size: 14px;
+    color: #7E7E7E;
+}
+
+.live-podcast {
+    margin: 20px;
+}
+
+.live-podcast h3 {
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.podcast-item {
+    background-color: #1F2429;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.podcast-item .tags span {
+    background-color: #2C3137;
+    color: #7E7E7E;
+    padding: 5px 10px;
+    border-radius: 12px;
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+.podcast-item p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.listeners p{
+    font-size: 10px;
+}
+
+
+.listenersbubble {
+    background: #3E407B;
+    max-width: fit-content;
+    opacity: 0.78;
+    border-radius: 15px;
+    padding-left: 25px;
+    padding-top: 2px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+
+}
+
+.listeners-balls{
+    position: relative; 
+    top: 6px;
+    right: 22px;
+}
+
+
+.ball{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ball:nth-child(1) {
+    background-color: white;
+    left: 0;
+}
+
+.ball:nth-child(2) {
+    background-color: rgb(126, 120, 120);
+    left: 5px;
+}
+
+.ball:nth-child(3) {
+    background-color: rgb(74, 72, 72);
+    left: 10px;
+}
+
+.live-button {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    background-color: #3F48CC;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 12px;
+}
+
+
+nav {
+    width: 390px;
+    background-color: #1F2429;
+    border-radius: 10px;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #7E7E7E;
+    font-size: 12px;
+}
+
+nav ul li i {
+    font-size: 24px; 
+    color: #7E7E7E;
+    margin-bottom: 5px;
+}
+
+nav ul li p {
+    margin: 0;
+}

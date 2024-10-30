@@ -1,0 +1,12 @@
+.btn{
+    margin: 35px;
+    width: 20%;
+    padding: 10px;
+}
+
+.box{
+    margin: 35px;
+    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+}

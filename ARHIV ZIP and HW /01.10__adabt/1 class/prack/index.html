@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container"></div>
+        
+        <header class="header">
+            <h1>Среда</h1>
+            <p>3 января</p>
+        </header>
+
+      
+        <div class="search-box">
+            <input type="text" placeholder="Поиск">
+            <button>🔍</button>
+        </div>
+
+       
+        <div class="new-entry">
+            <h2>Новая запись</h2>
+            <form>
+                <label for="description">Описание</label>
+                <input type="text" id="description" name="description" placeholder="Описание">
+                
+                <label for="date">Дата</label>
+                <input type="date" id="date" name="date">
+                
+                <div class="form-buttons">
+                    <button type="submit">Добавить</button>
+                    <button type="reset">Очистить</button>
+                </div>
+            </form>
+        </div>
+
+        
+        <div class="todo-list">
+            <div class="filter">
+                <button>Все</button>
+                <button>Активные</button>
+                <button>Завершённые</button>
+            </div>
+
+            <ul>
+                <li>
+                    <input type="checkbox">
+                    <label>Покормить кошку</label>
+                    <span>10 января, 11:30</span>
+                </li>
+                
+                <li>
+                    <input type="checkbox">
+                    <label>Покормить кошку</label>
+                    <span>10 января, 11:30</span>
+                </li>
+                <li>
+                    <input type="checkbox">
+                    <label>Покормить кошку</label>
+                    <span>10 января, 11:30</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
